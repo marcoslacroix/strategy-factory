@@ -14,6 +14,6 @@ public class TipoAService implements PedidoStrategy {
 
     @Override
     public void salvar(Pedido lote) {
-        System.out.println("Processando Lote Tipo: " + getTipo());
+        System.out.println("Processando Pedido Tipo: " + getTipo());
     }
 }
