@@ -1,9 +1,9 @@
-package com.example.strategy.factory.controller;
+package com.example.strategy.factory.pedido.controller;
 
-import com.example.strategy.factory.factory.PedidoStrategyFactory;
-import com.example.strategy.factory.model.Pedido;
-import com.example.strategy.factory.model.Tipo;
-import com.example.strategy.factory.strategy.PedidoStrategy;
+import com.example.strategy.factory.pedido.factory.PedidoStrategyFactory;
+import com.example.strategy.factory.pedido.model.Pedido;
+import com.example.strategy.factory.pedido.model.Tipo;
+import com.example.strategy.factory.pedido.strategy.PedidoStrategy;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

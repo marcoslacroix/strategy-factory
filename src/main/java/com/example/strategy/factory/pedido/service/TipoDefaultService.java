@@ -1,8 +1,8 @@
-package com.example.strategy.factory.service;
+package com.example.strategy.factory.pedido.service;
 
-import com.example.strategy.factory.model.Pedido;
-import com.example.strategy.factory.model.Tipo;
-import com.example.strategy.factory.strategy.PedidoStrategy;
+import com.example.strategy.factory.pedido.model.Pedido;
+import com.example.strategy.factory.pedido.model.Tipo;
+import com.example.strategy.factory.pedido.strategy.PedidoStrategy;
 import org.springframework.stereotype.Component;
 
 @Component

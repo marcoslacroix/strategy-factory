@@ -1,4 +1,4 @@
-package com.example.strategy.factory.model;
+package com.example.strategy.factory.pedido.model;
 
 import lombok.Getter;
 
