@@ -19,11 +19,9 @@ public class PedidoController {
 
     @GetMapping
     public ResponseEntity<?> get() {
-        Pedido pedidoA = new Pedido(Tipo.TIPO_A, "Dados A");
-
-        PedidoStrategy strategy = factory.getStrategy(pedidoA.getTipo().name());
-        strategy.salvar(pedidoA);
-//        debitoLoteHandler.execute(1L);
+        Pedido pedidoG = new Pedido(Tipo.TIPO_G, "Dados A");
+        PedidoStrategy strategy = factory.getStrategy(pedidoG.getTipo().name());
+        strategy.salvar(pedidoG);
         return ResponseEntity.ok().build();
     }
 

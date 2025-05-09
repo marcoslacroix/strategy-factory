@@ -1,10 +1,12 @@
 package com.example.strategy.factory.factory;
 
+import com.example.strategy.factory.model.Tipo;
 import com.example.strategy.factory.strategy.PedidoStrategy;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -19,10 +21,7 @@ public class PedidoStrategyFactory {
     }
 
     public PedidoStrategy getStrategy(String tipo) {
-        PedidoStrategy strategy = strategies.get(tipo);
-        if (strategy == null) {
-            throw new IllegalArgumentException("Tipo não suportado: " + tipo);
-        }
-        return strategy;
+        return Optional.ofNullable(strategies.get(tipo))
+                .orElse(strategies.get(Tipo.DEFAULT.name()));
     }
 }

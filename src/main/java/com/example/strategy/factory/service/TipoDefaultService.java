@@ -6,15 +6,15 @@ import com.example.strategy.factory.strategy.PedidoStrategy;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TipoBService implements PedidoStrategy {
+public class TipoDefaultService implements PedidoStrategy {
 
     @Override
     public String getTipo() {
-        return Tipo.TIPO_B.name();
+        return Tipo.DEFAULT.name();
     }
 
     @Override
     public void salvar(Pedido lote) {
-        System.out.println("Processando Pedido Tipo: " + getTipo());
+        System.out.println("Processando Pedido DEFAULT: " + getTipo());
     }
 }
